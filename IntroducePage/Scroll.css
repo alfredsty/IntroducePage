@@ -1,0 +1,53 @@
+/*  이 코드가 없으면 스크롤 2개가 됨*/
+body {
+    overflow: hidden;
+    font-family: 'Roboto Slab', serif;
+}
+
+/* 스크롤*/
+
+#container{
+    width:100%;
+    height:100vh; 
+    overflow: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    background-color: rgb(204,153,102);
+}
+
+.list{
+    width:100%; 
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+}
+
+.list:nth-child(2){
+    background-color: #4e5a56;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center; 
+}
+
+.list:nth-child(3){
+    background-color: #9d949e;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center; 
+}
+
+.list:nth-child(4){
+    background-color: #e0d8cc;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center; 
+}
+
+.list:nth-child(5){
+    background-color: #8a6e8a;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-position: center; 
+}
